@@ -30,7 +30,8 @@ There are 3 flags that needs to be set, 2 volumes and 1 environnment variable:
 - FULL_PATH_TO_A_LOG_FOLDER: log volume
 - NUMBER_OF_CONCURRENT_JOBS: number of concurent jobs 
 
-```sudo docker run \
+```bash
+sudo docker run \
 -v FULL_PATH_TO_YOUR_DATA:/data/ \
 -v FULL_PATH_TO_A_LOG_FOLDER:/opt/multiview/snakemake-workflows/spim_registration/timelapse/.snakemake/log/ \
 -e 'NUM_JOBS=NUMBER_OF_CONCURRENT_JOBS' \
@@ -40,7 +41,8 @@ xqua:multiview_reconstruction:latest
 ## GPU enabled
 You need to replace the docker command with the nvidia-docker tool as such:
 
-```sudo nvidia-docker run \
+```bash
+sudo nvidia-docker run \
 -v FULL_PATH_TO_YOUR_DATA:/data/ \
 -v FULL_PATH_TO_A_LOG_FOLDER:/opt/multiview/snakemake-workflows/spim_registration/timelapse/.snakemake/log/ \
 -e 'NUM_JOBS=NUMBER_OF_CONCURRENT_JOBS' \
