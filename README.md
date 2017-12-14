@@ -37,6 +37,15 @@ sudo docker run \
 -e 'NUM_JOBS=NUMBER_OF_CONCURRENT_JOBS' \
 xqua:multiview_reconstruction:latest
 ```
+example:
+
+```bash
+sudo docker run \
+-v /scratch/flyEmbryo:/data/ \
+-v /var/log/snakemake:/opt/multiview/snakemake-workflows/spim_registration/timelapse/.snakemake/log/ \
+-e 'NUM_JOBS=8' \
+xqua:multiview_reconstruction:latest
+```
 
 ## GPU enabled
 You need to replace the docker command with the nvidia-docker tool as such:
