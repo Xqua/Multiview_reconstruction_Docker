@@ -35,7 +35,7 @@ sudo docker run \
 -v FULL_PATH_TO_YOUR_DATA:/data/ \
 -v FULL_PATH_TO_A_LOG_FOLDER:/opt/multiview/snakemake-workflows/spim_registration/timelapse/.snakemake/log/ \
 -e 'NUM_JOBS=NUMBER_OF_CONCURRENT_JOBS' \
-xqua:multiview_reconstruction:latest
+xqua/multiview_reconstruction
 ```
 example:
 
@@ -44,7 +44,7 @@ sudo docker run \
 -v /scratch/flyEmbryo:/data/ \
 -v /var/log/snakemake:/opt/multiview/snakemake-workflows/spim_registration/timelapse/.snakemake/log/ \
 -e 'NUM_JOBS=8' \
-xqua:multiview_reconstruction:latest
+xqua/multiview_reconstruction
 ```
 
 ## GPU enabled
@@ -55,10 +55,13 @@ sudo nvidia-docker run \
 -v FULL_PATH_TO_YOUR_DATA:/data/ \
 -v FULL_PATH_TO_A_LOG_FOLDER:/opt/multiview/snakemake-workflows/spim_registration/timelapse/.snakemake/log/ \
 -e 'NUM_JOBS=NUMBER_OF_CONCURRENT_JOBS' \
-xqua:multiview_reconstruction:latest
+xqua/multiview_reconstruction
 ```
 
 # Important notes
+
+## What if it crashes ?
+The beauty of Docker is that as long as you mount the same volume, it will keep the computation state (thanks to snakemake). Thus, by relaunching the same command it will continue where it has left. If some timepoints crash in the process, just relaunch the `docker run` and it will restart where it failed.
 
 ## Using your own config.yaml
 
@@ -86,7 +89,7 @@ You need to add an empty file in your data repository:
 ## Deconvolution GPU Error CUFFT_ALLOC_FAILED
 
 If you get a `CUFFT_ALLOC_FAILED` error, it means your GPU is running out of memory. The probable reason for this is that the block size you defined for the deconvolution is too big to be handle by your card. It is easily fixed by changing the block_size parameter in the `config.yaml`:
-Valid values (that I know off) are: 
+Valid values (that I know off) are:
 - `"in 64x64x64 blocks"`
 - `"in 128x128x128 blocks"`
 - `"in 256x256x256 blocks"`
