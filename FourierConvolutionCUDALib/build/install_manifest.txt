@@ -1,0 +1,10 @@
+/opt/multiview/CUDA/lib/CMake/FourierConvolutionCUDALib/fourierconvolutioncudalib-config.cmake
+/opt/multiview/CUDA/lib/CMake/FourierConvolutionCUDALib/fourierconvolutioncudalib-config-version.cmake
+/opt/multiview/CUDA/lib/CMake/FourierConvolutionCUDALib/fourierconvolutioncudalib-targets.cmake
+/opt/multiview/CUDA/lib/CMake/FourierConvolutionCUDALib/fourierconvolutioncudalib-targets-release.cmake
+/opt/multiview/CUDA/lib/libFourierConvolutionCUDALib.so
+/opt/multiview/CUDA/include/convolution3Dfft.h
+/opt/multiview/CUDA/include/FourierConvolutionCUDALib_Export.h
+/opt/multiview/CUDA/lib/libFourierConvolutionCUDALib_static.a
+/opt/multiview/CUDA/include/convolution3Dfft.h
+/opt/multiview/CUDA/include/FourierConvolutionCUDALib_Export.h

@@ -1,0 +1,5 @@
+gpu_convolve 3 0.188123
+gpu_numerical_stability 0 0
+how_cufft_works 3 0.324136
+---
+gpu_numerical_stability

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libFourierConvolutionCUDALib_static.a  CMakeFiles/FourierConvolutionCUDALib_static.dir/FourierConvolutionCUDALib_static_generated_convolution3Dfft.cu.o CMakeFiles/FourierConvolutionCUDALib_static.dir/FourierConvolutionCUDALib_static_generated_standardCUDAfunctions.cu.o
+/usr/bin/ranlib libFourierConvolutionCUDALib_static.a

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/opt/multiview/FourierConvolutionCUDALib/tests/image_stack_utils.cpp
+iomanip
+-
+image_stack_utils.h
+/opt/multiview/FourierConvolutionCUDALib/tests/image_stack_utils.h
+
+/opt/multiview/FourierConvolutionCUDALib/tests/image_stack_utils.h
+vector
+-
+iostream
+-
+iomanip
+-
+boost/multi_array.hpp
+/opt/multiview/FourierConvolutionCUDALib/tests/boost/multi_array.hpp
+
