@@ -82,7 +82,13 @@ Missing input files for rule deconvolution:
 dataset_one_merge.xml_timelapse_transform
 ```
 
-You need to add an empty file in your data repository:
+You need to either activate the external_transfrom to downsample 2x (or more) your dataset:
+
+```
+  external_trafo_switch: "_external_trafo",
+```
+
+Or add an empty file in your data repository:
 `touch /PATH/TO/DATA/dataset_one_merge.xml_timelapse_transform`
 
 ## Deconvolution GPU Error CUFFT_ALLOC_FAILED
