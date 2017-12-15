@@ -1,4 +1,3 @@
-# Multiview_reconstruction_Docker
 Docker Containerization of the Multiview Registration Plugin (https://github.com/preibischLab/multiview-reconstruction).
 
 This is the repository for the docker image located at:
