@@ -3,7 +3,7 @@ Docker Containerization of the Multiview Registration Plugin (https://github.com
 This is the repository for the docker image located at:
 
 # Description
-This docker image contains FIJI and the Multiview Reconstruction plugin developped by Stephan Preibisch. It has been built for CPU and GPU computing (Nvidia only) and works using the SnakeMake automated pipeline built by Stephan Preibisch and Christopher Schmied (https://github.com/mpicbg-scicomp/snakemake-workflows).
+This docker image contains FIJI and the Multiview Reconstruction plugin developped by Stephan Preibisch (@StephanPreibisch). It has been built for CPU and GPU computing (Nvidia only) and works using the SnakeMake automated pipeline built by Stephan Preibisch (@StephanPreibisch) and Christopher Schmied (@schmiedc) (https://github.com/mpicbg-scicomp/snakemake-workflows).
 
 The CUDA Library has been built under Ubuntu 16.04 for CUDA 9 compatibility and is integrated in the image, along with all dependencies.
 
